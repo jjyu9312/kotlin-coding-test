@@ -1,0 +1,14 @@
+.gradle
+build/
+src/main/resources/static
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/bin/
+/.settings/
+/.classpath
+/.project
+/logs/
