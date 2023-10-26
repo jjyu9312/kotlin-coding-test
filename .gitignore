@@ -4,6 +4,8 @@ src/main/resources/static
 
 ### IntelliJ IDEA ###
 .idea
+*.idea
+/.idea/
 *.iws
 *.iml
 *.ipr

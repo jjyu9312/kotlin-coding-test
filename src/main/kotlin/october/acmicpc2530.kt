@@ -8,6 +8,6 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val m = nextLong()
     val minusValue = n - m
     val answer = abs(minusValue)
-
+    println()
     println(answer)
 }
