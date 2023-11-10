@@ -12,7 +12,7 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
             charList.add(item.toUpperCase())
         }
     }
-
+    println("=============================")
     val answer = charList.joinToString("")
     println(answer)
 }
