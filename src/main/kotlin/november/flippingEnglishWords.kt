@@ -22,5 +22,6 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     }
 
     val answer = charList.joinToString("")
+
     println(answer)
 }
