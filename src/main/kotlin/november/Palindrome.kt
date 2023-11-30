@@ -2,7 +2,8 @@ package november
 
 import java.util.*
 
-fun solution2(str: String): String {
+// 꿀팁 : 처음이랑 마지막을 하나씩 비교할 때는 i, len-i-1 활용
+fun palindromeSolution1(str: String): String {
     val lowerCaseWord = str.toLowerCase()
     val len = lowerCaseWord.length
     for (i in 0..len / 2) {
@@ -12,7 +13,7 @@ fun solution2(str: String): String {
     return "YES"
 }
 
-fun solution1(str: String): String {
+fun palindromeSolution2(str: String): String {
     val lowerCaseWord = str.toLowerCase()
     val lowerCaseWordCharList = lowerCaseWord.toCharArray()
     val answerCharList = mutableListOf<Char>()
@@ -32,6 +33,6 @@ fun solution1(str: String): String {
 
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val str = next()
-    println(solution1(str))
-    println(solution2(str))
+    println(palindromeSolution1(str))
+    println(palindromeSolution2(str))
 }
