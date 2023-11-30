@@ -4,24 +4,19 @@ import java.util.*
 
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val word = next()
-    val charList = mutableListOf<Char>()
-    word.forEach {
-        if (!charList.contains(it)) {
-            charList.add(it)
-        }
+    val lowerCaseWord = word.toLowerCase()
+    val lowerCaseWordCharList = lowerCaseWord.toCharArray()
+    val answerCharList = mutableListOf<Char>()
+
+    for (i in lowerCaseWordCharList.size - 1 downTo 0) {
+        answerCharList.add(lowerCaseWordCharList[i])
     }
 
-    val answer = charList.joinToString("")
-    println(answer)
+    val answer = answerCharList.joinToString("")
 
-    println("==================================")
+    println("word : ${word}")
+    println("answer : ${answer}")
 
-    var answer2 = ""
-
-    // indexOf 이용
-    for (i in 0 until word.length) {
-        if (word.indexOf(word[i]) == i) answer2 += word[i]
-    }
-
-    println(answer2)
+    if (lowerCaseWord == answer) println("YES")
+    else println("NO")
 }
