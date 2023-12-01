@@ -16,8 +16,8 @@ fun palindromeSolution1(str: String): String {
 fun palindromeSolution2(str: String): String {
     val lowerCaseWord = str.toLowerCase()
     val lowerCaseWordCharList = lowerCaseWord.toCharArray()
-    val answerCharList = mutableListOf<Char>()
 
+    val answerCharList = mutableListOf<Char>()
     for (i in lowerCaseWordCharList.size - 1 downTo 0) {
         answerCharList.add(lowerCaseWordCharList[i])
     }
