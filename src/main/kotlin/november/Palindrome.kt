@@ -24,9 +24,6 @@ fun palindromeSolution2(str: String): String {
 
     val answer = answerCharList.joinToString("")
 
-    println("str : $str")
-    println("answer : $answer")
-
     if (lowerCaseWord == answer) return("YES")
     else return("NO")
 }
