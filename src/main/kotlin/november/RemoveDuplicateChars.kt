@@ -12,7 +12,7 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     }
 
     val answer = charList.joinToString("")
-    println(answer)
+    println("answer : $answer")
 
     println("==================================")
 
@@ -23,5 +23,5 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
         if (word.indexOf(word[i]) == i) answer2 += word[i]
     }
 
-    println(answer2)
+    println("answer2 : $answer2")
 }
