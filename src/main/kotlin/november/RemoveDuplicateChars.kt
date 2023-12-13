@@ -14,9 +14,7 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val answer = charList.joinToString("")
     println("answer : $answer")
 
-
     println("=============== 방법 ===================")
-
 
     var answer2 = ""
 
