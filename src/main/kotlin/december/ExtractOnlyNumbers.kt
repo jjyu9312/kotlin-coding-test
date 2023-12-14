@@ -2,20 +2,16 @@ package december
 
 import java.util.*
 import kotlin.math.pow
+import kotlin.reflect.typeOf
 
-// g0en2T0s8eSoft
-// 0 2 0 8
+// 꿀팁) char를 toInt하면 아스키 코드 값이 나온다
 fun extractOnlyNumbersSolution1(str: String): Int {
     val replaceStr = str.replace(Regex("[^0-9]"), "")
     val numberList = replaceStr.toList()
     var answer = 0.0
     val len = numberList.size
     for (i in 0 until len) {
-        println("before answer : $answer")
-        println(10.0.pow(i))
-        println((10.0.pow(i) * (numberList[ len - (i+1) ]).toDouble()))
-        answer += (10.0.pow(i) * (numberList[ len - (i+1) ]).toDouble())
-        println("after answer : $answer")
+        answer += (10.0.pow(i) * ((numberList[ len - (i+1) ]).toString().toInt()))
     }
     return answer.toInt()
 }
