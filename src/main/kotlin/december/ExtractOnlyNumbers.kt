@@ -8,8 +8,11 @@ import kotlin.reflect.typeOf
 fun extractOnlyNumbersSolution1(str: String): Int {
     val replaceStr = str.replace(Regex("[^0-9]"), "")
     val numberList = replaceStr.toList()
+
     var answer = 0.0
+
     val len = numberList.size
+
     for (i in 0 until len) {
         answer += (10.0.pow(i) * ((numberList[ len - (i+1) ]).toString().toInt()))
     }
