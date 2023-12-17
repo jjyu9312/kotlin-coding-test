@@ -12,10 +12,10 @@ fun extractOnlyNumbersSolution1(str: String): Int {
     var answer = 0.0
 
     val len = numberList.size
-
     for (i in 0 until len) {
         answer += (10.0.pow(i) * ((numberList[ len - (i+1) ]).toString().toInt()))
     }
+
     return answer.toInt()
 }
 
