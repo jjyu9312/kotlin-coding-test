@@ -10,7 +10,9 @@ fun shortestCharLengthSolution1(
 ): Array<Int> {
 
     val answer: Array<Int> = Array(str.length) { index -> index }
-    var p = 1000 // 길이가 100이 최대기 때문에 100보다 큰 숫자 아무거나 정함
+
+    // 길이가 100이 최대기 때문에 100보다 큰 숫자 아무거나 정함
+    var p = 1000
     for (i in str.indices) {
         if (str[i] == char) {
             p = 0
@@ -21,7 +23,8 @@ fun shortestCharLengthSolution1(
         }
     }
 
-    p = 1000 // 길이가 100이 최대기 때문에 100보다 큰 숫자 아무거나 정함
+    // 끝에서부터 하나씩 탐색하기 위해 다시 p를 1000으로 초기
+    p = 1000
     for (i in str.length - 1 downTo 0) {
         if (str[i] == char) {
             p = 0
