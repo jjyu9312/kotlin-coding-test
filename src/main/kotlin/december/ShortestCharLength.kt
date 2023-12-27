@@ -23,7 +23,7 @@ fun shortestCharLengthSolution1(
         }
     }
 
-    // 끝에서부터 하나씩 탐색하기 위해 다시 p를 1000으로 초기
+    // 끝에서부터 하나씩 탐색하기 위해 다시 p를 1000으로 초기화
     p = 1000
     for (i in str.length - 1 downTo 0) {
         if (str[i] == char) {
