@@ -19,7 +19,7 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     var answer2 = ""
 
     // indexOf 이용
-    for (i in 0 until word.length) {
+    for (i in word.indices) {
         if (word.indexOf(word[i]) == i) answer2 += word[i]
     }
 

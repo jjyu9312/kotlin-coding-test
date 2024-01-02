@@ -19,7 +19,6 @@ fun extractOnlyNumbersSolution1(str: String): Int {
     return answer.toInt()
 }
 
-
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val str = next()
     println(extractOnlyNumbersSolution1(str))

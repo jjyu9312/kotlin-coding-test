@@ -24,8 +24,8 @@ fun palindromeSolution2(str: String): String {
 
     val answer = answerCharList.joinToString("")
 
-    if (lowerCaseWord == answer) return("YES")
-    else return("NO")
+    return if (lowerCaseWord == answer) ("YES")
+    else ("NO")
 }
 
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
