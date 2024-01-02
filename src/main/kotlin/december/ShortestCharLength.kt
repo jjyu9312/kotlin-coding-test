@@ -8,7 +8,6 @@ fun shortestCharLengthSolution1(
     str: String,
     char: Char,
 ): Array<Int> {
-
     val answer: Array<Int> = Array(str.length) { index -> index }
 
     // 길이가 100이 최대기 때문에 100보다 큰 숫자 아무거나 정함
