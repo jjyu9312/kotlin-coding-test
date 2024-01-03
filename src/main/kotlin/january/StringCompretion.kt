@@ -4,7 +4,7 @@ import java.util.*
 import kotlin.math.pow
 
 // 꿀팁) str 마지막에 빈 문자열을 넣으면 마지막 i와 i+1 비교 가능
-fun shortestCharLengthSolution1(
+fun stringCompretionSolution1(
     str: String
 ): String {
     var answer = ""
@@ -28,5 +28,5 @@ fun shortestCharLengthSolution1(
 
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val str = next()
-    println(shortestCharLengthSolution1(str))
+    println(stringCompretionSolution1(str))
 }
