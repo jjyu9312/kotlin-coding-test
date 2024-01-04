@@ -18,7 +18,7 @@ fun passwordSolution1(
         it.toInt(2)
     }
 
-    // 아스키코드를 문자로 바꾸기 => toChar 함수
+    // 아스키 코드를 문자로 바꾸기 => toChar 함수
     val asciiChunkedList = binaryChunkedList.map {
         it.toChar()
     }
