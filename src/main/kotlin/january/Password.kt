@@ -1,7 +1,6 @@
 package january
 
 import java.util.*
-import kotlin.math.pow
 
 fun passwordSolution1(
     len: Int,
