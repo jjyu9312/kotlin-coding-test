@@ -8,12 +8,9 @@ fun bigNumSolution1(
 ): String {
     val answerList = mutableListOf<Int>()
 
-    for (i in intArray.indices) {
-        println(intArray[i])
-        if (num <= intArray[i]) {
+    for (i in intArray.indices)
+        if (num <= intArray[i])
             answerList.add(intArray[i])
-        }
-    }
 
     return answerList.joinToString (" ")
 }
