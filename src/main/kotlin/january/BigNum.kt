@@ -15,7 +15,6 @@ fun bigNumSolution1(
     return answerList.joinToString (" ")
 }
 
-
 // intArray 만들기
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val num = nextInt()
