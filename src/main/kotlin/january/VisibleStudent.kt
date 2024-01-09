@@ -36,7 +36,8 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     val num = nextInt()
     val intArray = IntArray(num)
     for (i in 0 until num) {
-        intArray[i] = nextInt() // 배열의 각 요소에 값을 입력받음
+        // 배열의 각 요소에 값을 입력받음
+        intArray[i] = nextInt()
     }
     println(visibleStudentSolution1(intArray))
     println(visibleStudentSolution2(intArray))
