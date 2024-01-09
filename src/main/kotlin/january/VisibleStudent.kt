@@ -3,8 +3,7 @@ package january
 import java.util.*
 
 fun visibleStudentSolution1(
-    num: Int,
-    intArray: IntArray,
+    intArray: IntArray
 ): Int {
     var answer = 0
     val newArray = intArray + 0
@@ -18,8 +17,7 @@ fun visibleStudentSolution1(
 }
 
 fun visibleStudentSolution2(
-    num: Int,
-    intArray: IntArray,
+    intArray: IntArray
 ): Int {
     var answer = 1
     var max = intArray[0]
@@ -40,6 +38,6 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
     for (i in 0 until num) {
         intArray[i] = nextInt() // 배열의 각 요소에 값을 입력받음
     }
-    println(visibleStudentSolution1(num, intArray))
-    println(visibleStudentSolution2(num, intArray))
+    println(visibleStudentSolution1(intArray))
+    println(visibleStudentSolution2(intArray))
 }
