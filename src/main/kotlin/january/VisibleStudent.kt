@@ -16,6 +16,8 @@ fun visibleStudentSolution1(
     return answer
 }
 
+
+
 fun visibleStudentSolution2(
     intArray: IntArray
 ): Int {
