@@ -76,7 +76,9 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
             secondIntArray,
         )
     )
+
     println("=============================")
+
     println(
         rockScissorPaperSolution2(
             firstIntArray,
