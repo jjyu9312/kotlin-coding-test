@@ -9,7 +9,7 @@ fun sosuSolution1(
 ): Int {
     // 로직 시간 기록
     val startTime = System.currentTimeMillis()
-    println("로직 시작 시간: $startTime 밀리초")
+    println("로직 시작 시간 : $startTime 밀리초")
 
     var answer = 0
 
@@ -32,11 +32,11 @@ fun sosuSolution1(
 
     // 로직 종료 후 시간 기록
     val endTime = System.currentTimeMillis()
-    println("로직 종료 시간: $endTime 밀리초")
+    println("로직 종료 시간 : $endTime 밀리초")
 
     // 실행 시간 계산
     val elapsedTime = endTime - startTime
-    println("로직 실행 시간: $elapsedTime 밀리초")
+    println("로직 실행 시간 : $elapsedTime 밀리초")
 
     return answer
 }
@@ -48,7 +48,7 @@ fun sosuSolution2(
 ): Int {
     // 로직 시간 기록
     val startTime = System.currentTimeMillis()
-    println("로직 시작 시간: $startTime 밀리초")
+    println("로직 시작 시간 : $startTime 밀리초")
 
     var answer = 0
     val intArray = IntArray(num + 1)
@@ -65,11 +65,11 @@ fun sosuSolution2(
 
     // 로직 종료 후 시간 기록
     val endTime = System.currentTimeMillis()
-    println("로직 종료 시간: $endTime 밀리초")
+    println("로직 종료 시간 : $endTime 밀리초")
 
     // 실행 시간 계산
     val elapsedTime = endTime - startTime
-    println("로직 실행 시간: $elapsedTime 밀리초")
+    println("로직 실행 시간 : $elapsedTime 밀리초")
 
     return answer
 }
