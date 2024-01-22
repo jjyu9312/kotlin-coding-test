@@ -60,7 +60,6 @@ fun sosuSolution2(
                 intArray[j] = 1
             }
         }
-
     }
 
     // 로직 종료 후 시간 기록
