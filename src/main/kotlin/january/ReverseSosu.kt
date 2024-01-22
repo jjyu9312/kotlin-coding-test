@@ -60,6 +60,7 @@ fun reverseSosuSolution1(
     return answer.filter { it != 0 }
 }
 
+// 문자 뒤집는 공식 기억하기
 fun reverseSosuSolution2(
     num: Int,
     intArray: IntArray,
