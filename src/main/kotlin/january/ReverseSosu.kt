@@ -18,7 +18,6 @@ fun reverseSosuSolution1(
     val reverseStringList = mutableListOf<String>()
 
     stringArray.forEach {
-        println(it)
         val reverseNum = StringBuilder()
         for (i in it.length - 1 downTo 0) {
             reverseNum.append(it[i].toChar())
@@ -29,8 +28,6 @@ fun reverseSosuSolution1(
     val reverseIntList = reverseStringList.map {
         it.toInt()
     }
-
-    println(reverseIntList.size)
 
     val answer = MutableList(reverseIntList.size) { 0 }
 
@@ -71,45 +68,17 @@ fun reverseSosuSolution2(
     val startTime = System.currentTimeMillis()
     println("로직 시작 시간 : $startTime 밀리초")
 
-    val stringArray = intArray.map {
-        it.toString()
-    }
+    val answer = mutableListOf<Int>()
 
-    val reverseStringList = mutableListOf<String>()
-
-    stringArray.forEach {
-        println(it)
-        val reverseNum = StringBuilder()
-        for (i in it.length - 1 downTo 0) {
-            reverseNum.append(it[i].toChar())
+    for (i in intArray.indices) {
+        var tmp = intArray[i]
+        var res = 0
+        while (tmp > 0) {
+            val t = tmp % 10
+            res = res * 10 + t
+            tmp /= 10
         }
-        reverseStringList.add(reverseNum.toString())
-    }
-
-    val reverseIntList = reverseStringList.map {
-        it.toInt()
-    }
-
-    println(reverseIntList.size)
-
-    val answer = MutableList(reverseIntList.size) { 0 }
-
-    val max = reverseIntList.maxBy { it }
-    val maxIntArray = IntArray(max + 1)
-
-    for (i in 2 .. max) {
-        if (maxIntArray[i] == 0) {
-            reverseIntList.forEachIndexed { index, it ->
-                run {
-                    if (i == it) {
-                        answer.add(index, it)
-                    }
-                }
-            }
-            for (j in i .. max step i) {
-                maxIntArray[j] = 1
-            }
-        }
+        if (isPrime(res)) answer.add(res)
     }
 
     // 로직 종료 후 시간 기록
@@ -120,7 +89,16 @@ fun reverseSosuSolution2(
     val elapsedTime = endTime - startTime
     println("로직 실행 시간 : $elapsedTime 밀리초")
 
-    return answer.filter { it != 0 }
+    return answer
+}
+
+fun isPrime(num: Int): Boolean {
+    if (num == 1) return false
+    for (i in 2 until num) {
+        if (num % i == 0) return false
+    }
+
+    return true
 }
 
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
@@ -136,6 +114,7 @@ fun main(args: Array<String>) = with(Scanner(System.`in`)) {
             intArray
         )
     )
+    println("==================================")
     println(
         reverseSosuSolution2(
             num,
