@@ -60,7 +60,10 @@ fun reverseSosuSolution1(
     return answer.filter { it != 0 }
 }
 
-// 문자 뒤집는 공식 기억하기
+// 문자 뒤집는 공식 기억하기!!!
+// val t = tmp % 10
+// res = res * 10 + t
+// tmp /= 10
 fun reverseSosuSolution2(
     num: Int,
     intArray: IntArray,
